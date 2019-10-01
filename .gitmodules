@@ -1,0 +1,12 @@
+[submodule "vim/.vim/pack/plugins/start/vim-sensible"]
+	path = vim/.vim/pack/plugins/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "vim/.vim/pack/plugins/start/vim-sleuth"]
+	path = vim/.vim/pack/plugins/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule "vim/.vim/pack/plugins/start/ansible-vim"]
+	path = vim/.vim/pack/plugins/start/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
