@@ -1,0 +1,32 @@
+# .bashrc
+#  Note: large portions of this file either copied from or inspired by
+#        Jeff Geerling's dotfiles repo:
+#        https://github.com/geerlingguy/dotfiles
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# Use colors
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
+
+# For setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+
+export HISTTIMEFORMAT="%F %T  "
+
+# Set Bash command aliases
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
