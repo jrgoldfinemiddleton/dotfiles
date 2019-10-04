@@ -30,3 +30,5 @@ export HISTTIMEFORMAT="%F %T  "
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
+
+export PIP_REQUIRE_VIRTUALENV=true
