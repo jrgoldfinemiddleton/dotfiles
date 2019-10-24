@@ -119,8 +119,8 @@ nnoremap <silent><leader><space> :nohlsearch<cr>
 
 nmap <silent><leader>n :call NumberToggle()<cr>
 
-" Toggle PASTE mode
-set pastetoggle=<leader>p
+" Enable PASTE mode
+:map <leader>p :set paste<CR>
 
 
 """ LANGUAGES """
