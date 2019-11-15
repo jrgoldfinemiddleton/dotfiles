@@ -1,6 +1,6 @@
 # Include bashrc file segments
 if [ -d ~/.bashrc.d ]; then
-    for file in ~/.bashrc.d/*.bashrc; do
+    for file in $(ls ~/.bashrc.d/*.bashrc | sort); do
         source "$file"
     done
 fi
