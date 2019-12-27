@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# Deploy dotfiles within a home directory.
 
 if ! type stow > /dev/null; then
   echo "Please install the 'stow' command and run this script again."
