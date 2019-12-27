@@ -137,6 +137,8 @@ augroup configgroup
         \ softtabstop=4 formatoptions+=nqtl
   " yaml
   autocmd FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  " shell
+  autocmd FileType sh setlocal shiftwidth=2 tabstop=2 softtabstop=2
   " vim
   autocmd FileType vim setlocal shiftwidth=2 tabstop=2 softtabstop=2
   " javascript
