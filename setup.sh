@@ -1,10 +1,20 @@
 #!/bin/bash
 #
-# Deploy dotfiles within a home directory.
+# Deploy dotfiles into a home directory.
+# NOTE: This repository must be cloned into a direct subdirectory of
+#       the target home directory.
 
-if ! type stow > /dev/null; then
-  echo "Please install the 'stow' command and run this script again."
-  exit 1
+if ! (which brew >/dev/null); then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew analytics off
+else
+    echo "Homebrew previously installed - skipping"
+fi
+
+if ! (which stow >/dev/null); then
+    brew install stow 2>/dev/null
+else
+    echo "stow previously installed - skipping"
 fi
 
 git submodule update --init --recursive
