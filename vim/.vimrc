@@ -51,6 +51,7 @@ set showcmd
 
 
 """ MOUSE SETTINGS """
+
 set mouse=a
 
 
