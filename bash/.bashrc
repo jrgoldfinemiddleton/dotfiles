@@ -45,13 +45,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export PIPENV_VENV_IN_PROJECT=yes
 
-# Set Bash command aliases
-if [ -d ~/.bash_aliases.d ]; then
-    for file in $(ls ~/.bash_aliases.d/*.aliases | sort); do
-        source "$file"
-    done
-fi
 
+# Aliases
 if command -v pyenv 1>/dev/null 2>&1; then
     alias brew="env PATH='${PATH//$(pyenv root)\/shims:/}' brew"
 fi
