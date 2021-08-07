@@ -38,7 +38,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-export PIP_REQUIRE_VIRTUALENV=true
+#export PIP_REQUIRE_VIRTUALENV=true
 
 if command -v pyenv 1>/dev/null 2>&1; then
     export PIPENV_PYTHON="$(pyenv root)/shims/python"
@@ -52,3 +52,5 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 alias tma="tmux attach"
+
+export PATH="$PATH:/Users/jason/.local/bin"

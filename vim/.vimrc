@@ -78,6 +78,8 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'Vimjas/vim-python-pep8-indent'
+
 call plug#end()
 
 
@@ -144,6 +146,8 @@ augroup configgroup
   autocmd FileType vim setlocal shiftwidth=2 tabstop=2 softtabstop=2
   " javascript
   autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
+  " python
+  autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
   " commit messages
   autocmd Filetype gitcommit setlocal nolist textwidth=72
 augroup END
