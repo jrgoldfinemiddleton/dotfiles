@@ -5,3 +5,9 @@
 	default = simple
 [init]
 	defaultBranch = main
+[include]
+	path = ~/.gitconfig.d/security
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
