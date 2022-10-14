@@ -41,16 +41,23 @@ fi
 #export PIP_REQUIRE_VIRTUALENV=true
 
 if command -v pyenv 1>/dev/null 2>&1; then
-    export PIPENV_PYTHON="$(pyenv root)/shims/python"
+  export PIPENV_PYTHON="$(pyenv root)/shims/python"
 fi
 export PIPENV_VENV_IN_PROJECT=yes
 
 
 # Aliases
 if command -v pyenv 1>/dev/null 2>&1; then
-    alias brew="env PATH='${PATH//$(pyenv root)\/shims:/}' brew"
+  alias brew="env PATH='${PATH//$(pyenv root)\/shims:/}' brew"
 fi
 
 alias tma="tmux attach"
 
 export PATH="$PATH:/Users/jason/.local/bin"
+
+if [[ -d ~/.bash/git-aware-prompt ]]; then
+  export GITAWAREPROMPT=~/.bash/git-aware-prompt
+  source "${GITAWAREPROMPT}/main.sh"
+
+  export PS1="\[\e[0;32m\] \[\e[1;32m\]\t \[\e[0;2m\]\w \[\$txtcyn\]\$git_branch\[\$txtred\]\$git_dirty\[\$txtrst\]\[\e[0m\]\$ "
+fi
