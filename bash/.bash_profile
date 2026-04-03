@@ -16,3 +16,8 @@
 
 # Nothing else goes in here except things that should only run once per
 # login session.  Setting a relative PATH is one example.
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jason/.lmstudio/bin"
+# End of LM Studio CLI section
+

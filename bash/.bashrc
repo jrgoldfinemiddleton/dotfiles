@@ -61,3 +61,8 @@ if [[ -d ~/.bash/git-aware-prompt ]]; then
 
   export PS1="\[\e[0;32m\] \[\e[1;32m\]\t \[\e[0;2m\]\w \[\$txtcyn\]\$git_branch\[\$txtred\]\$git_dirty\[\$txtrst\]\[\e[0m\]\$ "
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jason/.lmstudio/bin"
+# End of LM Studio CLI section
+
